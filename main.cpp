@@ -98,8 +98,8 @@ int main() {
     DrawText(TextFormat("Items count: %d", items.size()), 10, 70, 20, DARKGRAY);
 
     if (isGameOver) {
-        DrawText("GAME OVER", 400, 400, 40, RED);
-        DrawText("Press [R] to Restart", 455, 490, 20, DARKGRAY);
+        DrawText("GAME OVER", 350, 400, 40, RED);
+        DrawText("Press [R] to Restart", 350, 450, 20, DARKGRAY);
     }
 
     EndDrawing();
