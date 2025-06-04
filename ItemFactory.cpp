@@ -9,7 +9,7 @@ using namespace std;
 unique_ptr<Item> ItemFactory::CreateRandomItem() {
     
     int type = rand() % 3;
-    float x = static_cast<float>(rand() % (1070 - 70)); // 800 - max width item
+    float x = static_cast<float>(rand() % (870 - 70)); // 800 - max width item
     float speed = 15 + rand() % 3;
 
     switch (type) {

@@ -14,7 +14,7 @@ void Player::MoveLeft() {
 
 void Player::MoveRight() {
     rect.x += speed;
-    if (rect.x + rect.width > 1070) rect.x = 1070 - rect.width;
+    if (rect.x + rect.width > 870) rect.x = 870 - rect.width;
 }
 
 void Player::Draw() const {

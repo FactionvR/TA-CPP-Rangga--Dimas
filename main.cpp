@@ -10,7 +10,7 @@
 
 
 int main() {
-    InitWindow(1080, 1080, "Catch the Falling Apples");
+    InitWindow(900, 900, "Catch the Falling Apples");
     SetTargetFPS(60);
     
     Assets::Load();
@@ -23,7 +23,7 @@ int main() {
     int spawnTimer = 0;
 
     ScoreManager score;
-    Player player(400, 900, 200, 200, 10.0f, &Assets::basketTex);
+    Player player(400, 700, 200, 200, 10.0f, &Assets::basketTex);
     InputHandler input;
     player.SetSpeed(15.0f); // player jadi sangat cepat
 
@@ -82,9 +82,7 @@ int main() {
         }
     }
 
-    // ==========================================
-    // 🎨 GAMBAR (Draw)
-    // ==========================================
+
     BeginDrawing();
 
     DrawTexture(Assets::backgroundTex, 0, 0, WHITE);
@@ -100,7 +98,7 @@ int main() {
     DrawText(TextFormat("Items count: %d", items.size()), 10, 70, 20, DARKGRAY);
 
     if (isGameOver) {
-        DrawText("GAME OVER", 440, 440, 40, RED);
+        DrawText("GAME OVER", 400, 400, 40, RED);
         DrawText("Press [R] to Restart", 455, 490, 20, DARKGRAY);
     }
 
