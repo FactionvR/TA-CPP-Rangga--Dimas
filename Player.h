@@ -11,7 +11,7 @@ private:
 
 public:
     Player(float x, float y, float width, float height, float speed, Texture2D* texture);
-
+    
     void SetSpeed(float newSpeed);
     void MoveLeft();
     void MoveRight();

@@ -1,16 +1,12 @@
-#ifndef SCORE_MANAGER_H
-#define SCORE_MANAGER_H
-
 class ScoreManager {
 private:
     int score;
+    ScoreManager(); // deklarasi
 
 public:
-    ScoreManager();
+    static ScoreManager& GetInstance();
 
-    void AddScore(int amount);
+    void AddScore(int value);
     void Reset();
     int GetScore() const;
 };
-
-#endif

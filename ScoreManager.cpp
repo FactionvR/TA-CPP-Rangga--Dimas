@@ -2,8 +2,13 @@
 
 ScoreManager::ScoreManager() : score(0) {}
 
-void ScoreManager::AddScore(int amount) {
-    score += amount;
+ScoreManager& ScoreManager::GetInstance() {
+    static ScoreManager instance;
+    return instance;
+}
+
+void ScoreManager::AddScore(int value) {
+    score += value;
 }
 
 void ScoreManager::Reset() {
@@ -13,4 +18,3 @@ void ScoreManager::Reset() {
 int ScoreManager::GetScore() const {
     return score;
 }
-

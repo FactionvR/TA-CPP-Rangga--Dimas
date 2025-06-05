@@ -22,7 +22,7 @@ int main() {
     vector<unique_ptr<Item>> items;
     int spawnTimer = 0;
 
-    ScoreManager score;
+    ScoreManager& score = ScoreManager::GetInstance();
     Player player(400, 700, 200, 200, 10.0f, &Assets::basketTex);
     InputHandler input;
     player.SetSpeed(15.0f); // player jadi sangat cepat
